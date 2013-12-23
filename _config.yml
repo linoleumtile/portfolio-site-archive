@@ -1,0 +1,9 @@
+name: Beth McKeever
+description: becoming extraordinary
+
+url: "http://localhost:4000"
+
+paginate: 10
+
+permalink: pretty
+pygments: true

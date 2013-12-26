@@ -1,13 +1,10 @@
 ---
-title: Beth McKeever
-layout: default
+title: Home
+layout: home
 ---
 
-# Beth McKeever
-
-Testing some of this stuff. \
-Woot.
-
-Wow what will this do. \
-Who knows \
-I am not sure.
+# I create meaningful experiences.
+<br />
+<br />
+## Beth McKeever
+User Experience Design & Product Innovation

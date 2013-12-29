@@ -25,6 +25,43 @@
   background-color: #669999;
 }
 
+#header {
+  font-size: 23px;
+  position: fixed;
+  z-index: 50;
+  display: block;
+}
+
+@media (min-width: 0px) {
+  #container {
+    padding-top: 550px;
+  }
+}
+
+@media (min-width: 363px) {
+  #container {
+    padding-top: 525px;
+  }
+}
+
+@media (min-width: 420px) {
+  #container {
+    padding-top: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  #container {
+    padding-top: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  #container {
+    padding-top: 350px;
+  }
+}
+
 /* Padding modifications a la HP, small adjusted to not interfere with text size */
 
 .pad-top {

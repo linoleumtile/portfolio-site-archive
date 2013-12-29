@@ -15,6 +15,15 @@
   ga('send', 'pageview');
 
 </script>
-
+	<!--scrolling top based on http://jsfiddle.net/KEjfe/ -->
+	<script>
+	$("#body").scroll( function() {
+    var value = $(this).scrollTop();
+    if ( value > 15 )
+        $("#header").css("font-size", "0px");
+    else
+        $("#header").css("border", "1px solid green");
+});
+	</script>
   </body>
 </html>

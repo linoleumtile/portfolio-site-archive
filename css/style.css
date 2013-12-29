@@ -4,6 +4,10 @@
 	border-radius: 100px;
 }
 
+.img-shadow {
+  box-shadow: 4px 4px 8px #333333;
+}
+
 .btn-sm {
 	display: inline-flex;
 }
@@ -15,6 +19,10 @@
     padding: 40px 0;
     position: relative;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
+}
+
+.btn-info {
+  background-color: #669999;
 }
 
 /* Padding modifications a la HP, small adjusted to not interfere with text size */

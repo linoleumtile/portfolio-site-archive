@@ -1,5 +1,14 @@
 /* STYLESHEET */
 
+.frame100 {
+	border-radius: 100px;
+}
+
+.btn-sm {
+	display: inline-flex;
+}
+
+
 /* Padding modifications a la HP, small adjusted to not interfere with text size */
 
 .pad-top {

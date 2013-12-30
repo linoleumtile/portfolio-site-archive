@@ -2,6 +2,21 @@
 
 /* basics */
 
+pre {
+  display: none;
+}
+
+li > h1 {
+  display: none;
+}
+
+ul
+{
+list-style-type: none;
+padding: 0px;
+margin: 0px;
+}
+
 .frame100 {
 	border-radius: 100px;
 }
@@ -77,23 +92,23 @@
   }
 }
 
-@media (max-width: 768px) {
-  #biopic {
+@media (max-width: 767px) {
+  #biopic-normal {
     display: inline;
     margin-bottom: 20px;
   }
-  #title {
+  #title-normal {
     display: inline;
     padding-left: 20px;
   }
 }
 
 @media (max-width: 448px) {
-  #biopic {
+  #biopic-normal {
     height: 65px;
     width: 65px;
   }
-  #title {
+  #title-normal {
     font-size: 28px;
   }
 }
@@ -152,6 +167,23 @@
   }
 }
 
+@media (min-width: 768px) {
+  #writing {
+    margin-left: -20px;
+    margin-right: 20px;
+  }
+  #work {
+    margin-left: 20px;
+    margin-right: -20px;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 853px) {
+  #bio, #social {
+    position: relative;
+    top: 38px;
+  }
+}
 
 /* header scroll adjustments */
 .tiny {
@@ -165,9 +197,18 @@
 
 .shrink {
   font-size: 22px !important;
-  height: 10% !important;
-  width: 10% !important;
+  height: 55px !important;
+  width: 55px !important;
   display: inline !important;
+}
+
+.shrink#title {
+  position: relative;
+  top: 0px;
+}
+
+.shrink-header {
+  padding: 10px !important;
 }
 
 /* proper content placement below header */

@@ -1,11 +1,14 @@
 ---
 layout: post
 title: New site using Jekyll and Github Pages
-comments: trues
+post_author: Beth McKeever
+comments: true
 excerpt: I've never considered myself a front-end developer. But maybe today that changes, a little bit. I wanted to share some of the tools I used to get this site up and running in about a week.
 ---
 
 #New site using Jekyll and Github Pages
+
+*by Beth McKeever*
 
 I've never considered myself a front-end developer. But maybe today that changes, a little bit. With great direction from friend and colleague [Erik Mitchell](http://www.twitter.com/mitc0185), I starting playing around with Jekyll. It took a while to get it working, but once it was, I barely had to think about it again.
 

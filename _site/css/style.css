@@ -1,5 +1,7 @@
 /* STYLESHEET */
 
+/* basics */
+
 .frame100 {
 	border-radius: 100px;
 }
@@ -31,6 +33,33 @@
   display: block;
   width: 101%;
 }
+
+
+/* icons */
+
+.icon {
+  background-repeat: no-repeat;
+  height: 33px;
+  width: 30px;
+  position: relative;
+  right: 8px;
+  bottom: 7px;
+  margin-bottom: -13px;
+}
+
+.twitter {
+  background-image: url('/img/twitter.png');
+}
+
+.linkedin {
+  background-image: url('/img/linkedin.png');
+}
+
+.github {
+  background-image: url('/img/github.png');
+}
+
+
 
 
 /* header scroll adjustments */

@@ -152,9 +152,15 @@ Because I've used Bootstrap a lot, I wanted to start with a look that was still 
 ###Github and Github Pages
 Github is a great way to **add version control** to any of your projects. I also love that it displays your activity on your [personal page](http://www.github.com/linoleumtile)... kind of a nice way to see when you've been active and maybe even [hold yourself accountable](https://twitter.com/jeresig/status/412402730091569152). I know a lot of people who use github via terminal commands, but again, that's still pretty new to me. Luckily there is a [github client for mac](http://mac.github.com/), and it is awesome! I have the best luck when I **start a new repository in github** before producing any files for a project. 
 
+The other great thing about using Github and Jekyll together is that you can **host simple sites using [Github pages](http://pages.github.com/)**. By following the simple directions, everytime I synced my commits on github, they would appear on [linoleumtile.github.io](linoleumtile.github.io). Rumor has it that you can even point your own URL to this, so that will be my next adventure!
+
 ###Other great tools
 I've always thought [Disqus](http://www.disqus.com/) seemed like a great platform, so I decided I would try it out. To my great surprise, it was the simplest thing I've done to build up this website, **taking less than 5 minutes to install commenting functionality**. SO EASY. 
 
-I'm **testing out a simple sharing service** called [ShareThis](http://www.sharethis.com). I don't know much about it, and am open to suggestions for other things that are out there, or glowing recommendations if it really is "Best in Class".
+Finally, I'm **testing out a simple sharing service** called [ShareThis](http://www.sharethis.com). I don't know much about it, and am open to suggestions for other things that are out there, or glowing recommendations if it really is "Best in Class".
 
-<br />[Back home](/)<br /><br />
+<hr/>
+
+Did I miss something? Let me know in the comments below. 
+
+<br />[&lt; Back home](/)<br /><br />

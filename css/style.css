@@ -7,7 +7,7 @@
 }
 
 .img-shadow {
-  box-shadow: 4px 4px 8px #333333;
+  box-shadow: -2px -2px 8px #333333;
 }
 
 #biopic {
@@ -51,7 +51,7 @@
 
 .header {
   font-size: 23px;
-  position: fixed;
+/*  position: fixed; */
   z-index: 50;
   display: block;
   width: 101%;
@@ -172,6 +172,8 @@
 
 /* proper content placement below header */
 
+/*
+
 @media (min-width: 0px) {
   #container {
     padding-top: 300px;
@@ -206,6 +208,11 @@
   #container {
     padding-top: 275px;
   }
+}
+*/
+
+#header {
+  margin-bottom: -10px;
 }
 
 /* Padding modifications a la HP, small adjusted to not interfere with text size */

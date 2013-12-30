@@ -104,11 +104,11 @@ margin: 0px;
 }
 
 @media (max-width: 448px) {
-  #biopic-normal {
-    height: 65px;
+  #biopic {
+    height: 65px; 
     width: 65px;
   }
-  #title-normal {
+  #title {
     font-size: 28px;
   }
 }
@@ -158,11 +158,16 @@ margin: 0px;
   a.btn-sm > .icon {
     display: none;
   }
+  .btn-sm {
+    padding: 12px;
+    text-align: center
+  }
 }
 
 @media (max-width: 370px) {
   .social-text {
-    display: none;
+    display: inline;
+    margin-right: 3px;
   }
   .icon {
     display: inline;

@@ -20,20 +20,20 @@
   </head>
 
   <body>
-    <div class="jumbotron" id="header">
+    <div class="jumbotron header" id="header">
       <div class="col-md-12">
         <div class="row pad-top pad-bottom">
           <div class="col-md-0">
           </div>
           <div class="col-md-4 col-md-offset-2 col-sm-4">
-              <img class="frame100 img-shadow" src="/img/me.jpg" height="125" width="125"/>
-              <h2>Beth McKeever</h2>
+              <img class="frame100 img-shadow biopic" id="biopic" src="/img/me.jpg" height="125" width="125"/>
+              <h1 class="title" id="title">Beth McKeever</h1>
           </div>
           <div class="col-md-1 col-xs-0 col-sm-0 col-lg-0">
           </div>
           <div class="col-md-4 col-sm-8">
-            <p><strong>User Experience Design & Product Innovation</strong><br />I care deeply about making great products and experiences through user-centered design.</p>
-            <div class="row">
+            <p id="bio"><strong>User Experience Design & Product Innovation</strong><br />I care deeply about making great products and experiences through user-centered design.</p>
+            <div class="row social" id="social">
               <div class="col-xs-4">
                 <a class="btn-sm btn-info" role="button" href="http://twitter.com/linoleumtile">Twitter</span>&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
               </div>
@@ -93,14 +93,24 @@
   ga('send', 'pageview');
 
 </script>
-	<!--scrolling top based on http://jsfiddle.net/KEjfe/ -->
+	<!--scrolling top -->
 	<script>
-	$("#body").scroll( function() {
-    var value = $(this).scrollTop();
-    if ( value > 15 )
-        $("#header").css("font-size", "0px");
-    else
-        $("#header").css("border", "1px solid green");
+$(window).scroll(function () {
+  if ($(document).scrollTop() < 5) {
+    $('#header').removeClass('tiny');
+    $('#bio').removeClass('hide');
+    $('#biopic').removeClass('shrink');
+    $('#title').removeClass('shrink');
+    $('#title').removeClass('pad-left');
+    $('#social').removeClass('hide');
+  } else {
+    $('#header').addClass('tiny');
+    $('#bio').addClass('hide');
+    $('#biopic').addClass('shrink');
+    $('#title').addClass('shrink');
+    $('#title').addClass('pad-left');
+    $('#social').addClass('hide');
+  }
 });
 	</script>
   </body>

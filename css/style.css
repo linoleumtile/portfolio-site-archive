@@ -13,10 +13,9 @@
 }
 
 .jumbotron {
-    background: linear-gradient(45deg, #003300 0%, #336600 100%) repeat scroll 0 0 transparent;
+    background: linear-gradient(45deg, #004f6b 0%, #006386 100%) repeat scroll 0 0 transparent;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2) inset, 0 -3px 7px rgba(0, 0, 0, 0.2) inset;
     color: #FFFFFF;
-    padding: 40px 0;
     position: relative;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
 }
@@ -25,26 +24,53 @@
   background-color: #669999;
 }
 
-#header {
+.header {
   font-size: 23px;
   position: fixed;
   z-index: 50;
   display: block;
+  width: 101%;
 }
+
+
+/* header scroll adjustments */
+.tiny {
+  font-size: 15px;
+  padding: 5px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.shrink {
+  font-size: 22px !important;
+  height: 10%;
+  width: 10%;
+  display: inline;
+}
+
+/* proper content placement below header */
 
 @media (min-width: 0px) {
   #container {
-    padding-top: 550px;
+    padding-top: 585px;
   }
 }
 
-@media (min-width: 363px) {
+@media (min-width: 359px) {
   #container {
     padding-top: 525px;
   }
 }
 
-@media (min-width: 420px) {
+@media (min-width: 516px) {
+  #container {
+    padding-top: 500px;
+  }
+}
+
+@media (min-width: 608px) {
   #container {
     padding-top: 450px;
   }
@@ -52,13 +78,13 @@
 
 @media (min-width: 768px) {
   #container {
-    padding-top: 300px;
+    padding-top: 350px;
   }
 }
 
 @media (min-width: 992px) {
   #container {
-    padding-top: 350px;
+    padding-top: 375px;
   }
 }
 

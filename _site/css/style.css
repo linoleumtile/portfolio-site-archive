@@ -53,7 +53,8 @@ margin: 0px;
 }
 
 .jumbotron {
-    background: linear-gradient(45deg, #004f6b 0%, #006386 100%) repeat scroll 0 0 transparent;
+    background: linear-gradient(45deg, #004f6b 0%, #006386 100%) repeat scroll 0 0 transparent !important;
+    background-color: #004f6b;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2) inset, 0 -3px 7px rgba(0, 0, 0, 0.2) inset;
     color: #FFFFFF;
     position: relative;

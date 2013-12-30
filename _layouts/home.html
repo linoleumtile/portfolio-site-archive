@@ -7,8 +7,8 @@
 			<ul>
   				{% for post in site.posts %}
     			<li>
-      				<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      				<article>{{ post.excerpt }}</article>
+      				<h3><a href="{{ post.url }}">{{ post.title }}</a><br /><small>{{ post.date | date: '%B %d, %Y' }}</small></h3>
+      				<article>{{ post.excerpt }} <a href="{{ post.url }}">read more &gt;</a></article>
     			</li>
   				{% endfor %}
 			</ul>

@@ -17,6 +17,10 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "0fc5eb76-ba09-4e72-a1dd-eb0ec46b83d2", doNotHash: false, doNotCopy: false, hashAddressBar: true});</script>
   </head>
 
   <body>
@@ -26,6 +30,11 @@
           <div class="col-md-12">
               <img class="frame100 img-shadow biopic shrink" id="biopic" src="/img/me.jpg"/>
               <h2 class="title shrink" id="title"><a href="/"><span class="glyphicon glyphicon-chevron-left"></span>&nbsp;Beth McKeever</a></h2>
+              <div class="share pull-right">
+                <span class='st_twitter_hcount' displayText='Tweet'></span>
+                <span class='st_linkedin_hcount' displayText='LinkedIn'></span>
+                <span class='st_email_hcount' displayText='Email'></span>
+              </div>
           </div>
         </div>
       </div>
@@ -37,9 +46,179 @@
 	<div class="col-md-12 col-sm-12 pad-top">
 			<div class="content"><h1 id="new_site_using_jekyll_and_github_pages">New site using Jekyll and Github Pages</h1>
 
-<p>I’ve never considered myself a front-end developer. But maybe today that changes, a little bit. With great direction from friend and colleague <a href="http://www.twitter.com/mitc0185">Erik Mitchell</a>, I starting playing around with Jekyll. It took a while to get it working, but once it was, I barely had to think about it again.</p></div>
+<p>I’ve never considered myself a front-end developer. But maybe today that changes, a little bit. With great direction from friend and colleague <a href="http://www.twitter.com/mitc0185">Erik Mitchell</a>, I starting playing around with Jekyll. It took a while to get it working, but once it was, I barely had to think about it again.</p>
+
+<h2 id="i_wanted_to_share_some_of_the_tools_i_used_to_get_this_site_up_and_running_in_about_a_week">I wanted to share some of the tools I used to get this site up and running in about a week.</h2>
+
+<h3 id="jekyll">Jekyll</h3>
+
+<p>Jekyll builds and locally serves my site. This was basically all new to me. <strong>To install Jekyll</strong>, I followed directions at their <a href="http://www.jekyllrb.com">main site</a>.</p>
+
+<p>Additionally, I found Andy Taylor’s <a href="http://andytaylor.me/2012/11/03/installing-ruby-and-jekyll/">post on the topic</a> helpful.</p>
+
+<p>Since <strong>using the terminal</strong> was relatively new to me as well, this <a href="http://www.dummies.com/how-to/content/how-to-use-basic-unix-commands-to-work-in-terminal.html">for Dummies page</a> was helpful throughout. The one thing those posts may not mention is the need for the <code>sudo</code> command before most terminal commands like <code>gem install jekyll</code>. The <code>sudo</code> command means you’re overriding any commands that wouldn’t typically have admin access, and because of this, you will need to enter an admin password. There’s probably a way to unlock things so <code>sudo</code> isn’t always needed, but I never got that far.</p>
+
+<p>The Jekyll site contains much of the rest of the information you need to get up and running, but when it comes to <strong>writing posts in markdown</strong>, you’ll want to check out the <a href="http://daringfireball.net/projects/markdown/">official site</a> for Markdown language. I’m still getting used to it, so sometimes I pepper in HTML when I can’t figure something out, or when Markdown doesn’t support what I need to show. It’s great that this system allows you to use both Markdown and HTML in the same .md document.</p>
+
+<h3 id="twitter_bootstrap">Twitter Bootstrap</h3>
+
+<p>Confession: I totally love <a href="http://www.getbootstrap.com">Twitter Bootstrap</a>. The developers I work with at HealthPartners have adapted it for our authenticated site, meaning I can rapid prototype at work. Anytime I need to stand up a site quickly, I immediately go to Bootstrap. You don’t have to touch the CSS to quickly create something that looks nice on any device, but it’s also built so that playing with styles or applying a theme is easy.</p>
+
+<p><strong>Getting up and running with bootstrap</strong> is as simple as plopping the CSS and JS folders into your site structure, and linking to it in the header and footer, respectively. Viewing the source of one of <a href="http://getbootstrap.com/getting-started/#examples">their examples</a> is honestly one of the best ways to understand how you can start structuring the HTML to fit your needs.</p>
+
+<p>I also <strong>borrowed a great little chunk of CSS</strong> from dev friends at HealthPartners that lets you quickly adjust padding on any element by adding a couple of classes. With this CSS, all you need to do is indicate the direction of the padding (ex. <code>pad-top</code>, <code>pad-right</code>) and the size (ex. <code>jumbo</code>, <code>mini</code>, <code>sm</code>) if you’re not happy with the default of 15px.</p>
+<div id='accordion' class='panel-group'>
+  <div class='panel panel-default'>
+    <div class='panel-heading'>
+      <h4 class='panel-title'>
+        <a data-parent='#accordion' href='#collapseOne' data-toggle='collapse'>
+          CSS padding classes<span class='pull-right'><em>click to expand</em></span>
+        </a>
+      </h4>
+    </div>
+    <div id='collapseOne' class='panel-collapse collapse'>
+      <div class='panel-body'>
+      	<pre>
+			<code>
+/* Padding modifications for Bootstrap, adapted from HealthPartners */
+
+.pad-top {
+	padding-top: 15px;
+}
+.pad-top.mini {
+	padding-top: 4px;
+}
+.pad-top.sm {
+	padding-top: 8px;
+}
+.pad-top.medium {
+	padding-top: 11px;
+}
+.pad-top.large {
+	padding-top: 23px;
+}
+.pad-top.extra-large {
+	padding-top: 35px;
+}
+.pad-top.jumbo {
+	padding-top: 45px;
+}
+.pad-top.extra-jumbo {
+	padding-top: 55px;
+}
+.pad-bottom {
+	padding-bottom: 15px;
+}
+.pad-bottom.mini {
+	padding-bottom: 4px;
+}
+.pad-bottom.sm {
+	padding-bottom: 8px;
+}
+.pad-bottom.medium {
+	padding-bottom: 11px;
+}
+.pad-bottom.large {
+	padding-bottom: 23px;
+}
+.pad-bottom.extra-large {
+	padding-bottom: 35px;
+}
+.pad-bottom.jumbo {
+	padding-bottom: 45px;
+}
+.pad-bottom.extra-jumbo {
+	padding-bottom: 55px;
+}
+.pad-left {
+	padding-left: 15px;
+}
+.pad-left.mini {
+	padding-left: 4px;
+}
+.pad-left.sm {
+	padding-left: 8px;
+}
+.pad-left.medium {
+	padding-left: 11px;
+}
+.pad-left.large {
+	padding-left: 23px;
+}
+.pad-left.extra-large {
+	padding-left: 35px;
+}
+.pad-left.jumbo {
+	padding-left: 45px;
+}
+.pad-left.extra-jumbo {
+	padding-left: 55px;
+}
+.pad-right {
+	padding-right: 15px;
+}
+.pad-right.mini {
+	padding-right: 4px;
+}
+.pad-right.sm {
+	padding-right: 8px;
+}
+.pad-right.medium {
+	padding-right: 11px;
+}
+.pad-right.large {
+	padding-right: 23px;
+}
+.pad-right.extra-large {
+	padding-right: 35px;
+}
+.pad-right.jumbo {
+	padding-right: 45px;
+}
+.pad-right.extra-jumbo {
+	padding-right: 55px;
+}
+	</code>
+</pre>
+</div>
+</div>
+</div>
+</div>
+<p><br /></p>
+
+<p>Because I’ve used Bootstrap a lot, I wanted to start with a look that was still simple, but looked a little different than the default. I <strong>added a free Bootstrap theme</strong> from <a href="http://bootswatch.com/">Bootswatch</a> called “Yeti”. I plan to eventually mold this site into something more distinct, but in order to get this thing out quickly while I was on vacation, using a theme made the most sense. There are also plenty of themes out there you can buy if you really don’t want to touch the visual design.</p>
+
+<h3 id="github_and_github_pages">Github and Github Pages</h3>
+
+<p>Github is a great way to <strong>add version control</strong> to any of your projects. I also love that it displays your activity on your <a href="http://www.github.com/linoleumtile">personal page</a>… kind of a nice way to see when you’ve been active and maybe even <a href="https://twitter.com/jeresig/status/412402730091569152">hold yourself accountable</a>. I know a lot of people who use github via terminal commands, but again, that’s still pretty new to me. Luckily there is a <a href="http://mac.github.com/">github client for mac</a>, and it is awesome! I have the best luck when I <strong>start a new repository in github</strong> before producing any files for a project.</p>
+
+<h3 id="other_great_tools">Other great tools</h3>
+
+<p>I’ve always thought <a href="http://www.disqus.com/">Disqus</a> seemed like a great platform, so I decided I would try it out. To my great surprise, it was the simplest thing I’ve done to build up this website, <strong>taking less than 5 minutes to install commenting functionality</strong>. SO EASY.</p>
+
+<p>I’m <strong>testing out a simple sharing service</strong> called <a href="http://www.sharethis.com">ShareThis</a>. I don’t know much about it, and am open to suggestions for other things that are out there, or glowing recommendations if it really is “Best in Class”.</p>
+
+<p><br /><a href="/">Back home</a><br /><br /></p></div>
+
+			
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'bethmckeever'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
 	</div>
 </div>
+<p><small>&copy; 2013-2014 Beth McKeever</small></p>
 </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->

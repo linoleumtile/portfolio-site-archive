@@ -118,6 +118,11 @@ margin: 0px;
   #biopic {margin-bottom: 0px; margin-top: -35px;}
   #social {margin-bottom: -20px;}
 }
+
+@media (max-width: 466px) {
+  #title.shrink {display: block; padding-left: 0px; margin-top: 0px;}
+  #biopic.shrink {margin-bottom: 0px; margin-top: 0px;}
+}
 /* icons */
 
 .icon {
@@ -147,10 +152,10 @@ margin: 0px;
 }
 
 @media (max-width: 515px) {
-  .glyphicon {
+  a.btn-sm > .glyphicon { 
     display: none;
   }
-  .icon {
+  a.btn-sm > .icon {
     display: none;
   }
 }

@@ -75,16 +75,16 @@
 <p><strong>Getting up and running with bootstrap</strong> is as simple as plopping the CSS and JS folders into your site structure, and linking to it in the header and footer, respectively. Viewing the source of one of <a href="http://getbootstrap.com/getting-started/#examples">their examples</a> is honestly one of the best ways to understand how you can start structuring the HTML to fit your needs.</p>
 
 <p>I also <strong>borrowed a great little chunk of CSS</strong> from dev friends at HealthPartners that lets you quickly adjust padding on any element by adding a couple of classes. With this CSS, all you need to do is indicate the direction of the padding (ex. <code>pad-top</code>, <code>pad-right</code>) and the size (ex. <code>jumbo</code>, <code>mini</code>, <code>sm</code>) if you’re not happy with the default of 15px.</p>
-<div id='accordion' class='panel-group'>
+<div class='panel-group' id='accordion'>
   <div class='panel panel-default'>
     <div class='panel-heading'>
       <h4 class='panel-title'>
-        <a data-parent='#accordion' href='#collapseOne' data-toggle='collapse'>
+        <a data-parent='#accordion' data-toggle='collapse' href='#collapseOne'>
           CSS padding classes<span class='pull-right'><em>click to expand</em></span>
         </a>
       </h4>
     </div>
-    <div id='collapseOne' class='panel-collapse collapse'>
+    <div class='panel-collapse collapse' id='collapseOne'>
       <div class='panel-body'>
       	<pre>
 			<code>
